@@ -2,7 +2,7 @@
 
 exports[`BlockSection > renders properly 1`] = `
 "<section class=\\"p-4\\">
-  <h3 class=\\"font-default text-xl font-bold w-full border-b-2 pb-2\\">Foo</h3>
-  <div class=\\"mt-2\\"></div>
+  <h3 class=\\"font-default text-xl font-bold w-full border-b-2 pb-2 block\\">Foo</h3>
+  <div class=\\"mt-4\\"></div>
 </section>"
 `;

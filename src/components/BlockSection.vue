@@ -9,9 +9,9 @@ defineProps({
 
 <template>
   <section class="p-4">
-    <h3 class="font-default text-xl font-bold w-full border-b-2 pb-2">
+    <h3 class="font-default text-xl font-bold w-full border-b-2 pb-2 block">
       {{ title }}
     </h3>
-    <div class="mt-2"><slot /></div>
+    <div class="mt-4"><slot /></div>
   </section>
 </template>
