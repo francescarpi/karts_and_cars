@@ -1,0 +1,7 @@
+// Vitest Snapshot v1
+
+exports[`MainMenu > renders properly 1`] = `
+"<div class=\\"bg\\" data-v-43bf210c=\\"\\">
+  <div class=\\"bg-black text-white p-4 opacity-80\\" data-v-43bf210c=\\"\\">Menu</div>
+</div>"
+`;

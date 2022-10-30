@@ -3,7 +3,12 @@
 module.exports = {
   content: ["./index.html", "./src/**/*.{vue,js,ts}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        faster: ["FasterOne"],
+        default: ["Livvic"],
+      },
+    },
   },
   plugins: [],
 };

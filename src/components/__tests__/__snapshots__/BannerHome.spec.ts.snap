@@ -1,0 +1,11 @@
+// Vitest Snapshot v1
+
+exports[`BannerHome > renders properly 1`] = `
+"<div class=\\"h-72 relative\\" data-v-63c1de5c=\\"\\">
+  <div class=\\"bg absolute inset-0\\" data-v-63c1de5c=\\"\\"></div>
+  <div class=\\"absolute inset-0 text-center\\" data-v-63c1de5c=\\"\\">
+    <h1 class=\\"text-white text-5xl mt-16 mb-4\\" data-v-63c1de5c=\\"\\"><span class=\\"text-red-800 font-faster\\">Karts</span><span class=\\"ml-2 mr-4 text-xl\\">&amp;</span><span class=\\"text-yellow-200 font-faster\\">Cars</span></h1>
+    <h2 class=\\"font-default font-bold text-white text-xl\\" data-v-63c1de5c=\\"\\"> Apasionados del motor </h2>
+  </div>
+</div>"
+`;
