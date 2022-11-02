@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "description": "<b>Promocionamos</b> su marca por todo el territorio y en nuestras redes sociales."
+  },
+  {
+    "id": 2,
+    "description": "Disponemos de <b>nuestra propia flota</b> de vehículos, pero también acogemos, asesoramos y ayudamos a particulares que quieran formar parte de Kars & Cars. "
+  },
+  {
+    "id": 3,
+    "description": "Ofrecemos el servicio de <b>reportajes fotográficos</b> a nuestros clientes para que puedan promocionar su marca dentro o fuera del contexto deportivo."
+  },
+  {
+    "id": 4,
+    "description": "<b>Guardamos</b> el vehículo de nuestros socios y los mantenemos informados de todos los eventos potencialmente apropiados para ellos."
+  },
+  {
+    "id": 5,
+    "description": "<b>Formamos a equipos y pilotos</b> sobre normativas y procedimientos y teórica y/o práctica en conducción."
+  }
+]

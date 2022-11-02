@@ -1,35 +1,30 @@
-@import './base.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-
-  font-weight: normal;
+@font-face {
+    font-family: "FasterOne";
+    src: url("./fonts/FasterOne-Regular.ttf");
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
+@font-face {
+    font-family: "Livvic";
+    src: url("./fonts/Livvic-Bold.ttf");
+    font-weight: 700;
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
+@font-face {
+    font-family: "Livvic";
+    src: url("./fonts/Livvic-Bold.ttf");
+    font-weight: bolder;
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
+@font-face {
+    font-family: "Livvic";
+    src: url("./fonts/Livvic-Regular.ttf");
+    font-weight: 400;
+}
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
+body {
+    @apply font-default font-normal;
 }
