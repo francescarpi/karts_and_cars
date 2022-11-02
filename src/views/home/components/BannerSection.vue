@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import LogoKartsAndCars from "./LogoKartsAndCars.vue";
+import LogoKartsAndCars from "../../../components/LogoKartsAndCars.vue";
 </script>
 
 <template>
