@@ -11,15 +11,27 @@ export interface IEvent {
   description: string;
 }
 
+export interface IIdentity {
+  id: number;
+  text: string;
+}
+
 const getFullUrl = (uri: string): string =>
   `${import.meta.env.VITE_API_HOST}${uri}`;
 
+const json = (response: Response) => response.json();
+
 export const getServices = (): Promise<IService[]> =>
   fetch(getFullUrl("/services.json"))
-    .then((response) => response.json())
+    .then(json)
     .catch(() => []);
 
 export const getEvents = (): Promise<IEvent[]> =>
   fetch(getFullUrl("/events.json"))
-    .then((response) => response.json())
+    .then(json)
+    .catch(() => []);
+
+export const getIdentity = (): Promise<IIdentity[]> =>
+  fetch(getFullUrl("/identity.json"))
+    .then(json)
     .catch(() => []);

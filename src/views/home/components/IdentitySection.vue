@@ -1,17 +1,27 @@
+<script setup lang="ts">
+import { onMounted, ref } from "vue";
+import { getIdentity } from "@/services/resources";
+import LoadingContent from "@/components/LoadingContent.vue";
+
+import type { Ref } from "vue";
+import type { IIdentity } from "@/services/resources";
+
+const identityTexts: Ref<IIdentity[] | null> = ref(null);
+
+onMounted(async () => {
+  identityTexts.value = await getIdentity();
+});
+</script>
+
 <template>
-  <div data-aos="fade-up">
-    <p class="mb-4">
-      Somos una <b>plataforma publicitaria</b> dedicada exclusivamente al
-      deporte del motor y su promoción a través de <b>coches clásicos</b>.
-    </p>
-    <p class="mb-4">
-      Colaboramos con otras entidades en la organización de eventos, ayudando al
-      crecimiento de pilotos y equipos mientras ofrecemos espacios publicitarios
-      para nuestros clientes.
-    </p>
-    <p>
-      La <b>calidad</b> en lo que hacemos es la característica que mejor define
-      nuestra personalidad.
-    </p>
-  </div>
+  <LoadingContent :is-loading="identityTexts === null">
+    <div data-aos="fade-up">
+      <p
+        class="mb-4"
+        v-for="text in identityTexts"
+        :key="text.id"
+        v-html="text.text"
+      />
+    </div>
+  </LoadingContent>
 </template>

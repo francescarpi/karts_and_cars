@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { onMounted, ref } from "vue";
 import { getEvents } from "@/services/resources";
-
+import LoadingContent from "@/components/LoadingContent.vue";
 import type { Ref } from "vue";
 import type { IEvent } from "@/services/resources";
 
@@ -13,11 +13,13 @@ onMounted(async () => {
 </script>
 
 <template>
-  <ul data-aos="fade-right">
-    <li v-for="event in events" :key="event.id" class="mb-4">
-      <b>{{ event.title }}</b
-      >. {{ event.description }}. Del {{ event.start_date }} al
-      {{ event.due_date }}
-    </li>
-  </ul>
+  <LoadingContent :is-loading="events === null">
+    <ul data-aos="fade-right">
+      <li v-for="event in events" :key="event.id" class="mb-4">
+        <b>{{ event.title }}</b
+        >. {{ event.description }}. Del {{ event.start_date }} al
+        {{ event.due_date }}
+      </li>
+    </ul>
+  </LoadingContent>
 </template>
