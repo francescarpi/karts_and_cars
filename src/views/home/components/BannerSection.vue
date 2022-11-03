@@ -7,8 +7,8 @@ import LogoKartsAndCars from "../../../components/LogoKartsAndCars.vue";
     <div class="bg absolute inset-0"></div>
     <div class="absolute inset-0 text-center">
       <LogoKartsAndCars class="mt-16 mb-4" />
-      <h2 class="font-default font-bold text-white text-xl">
-        Apasionados del motor
+      <h2 class="font-default font-bold text-gray-1000 text-xl">
+        Apasionados del motor<br />a tu servicio
       </h2>
     </div>
   </div>
