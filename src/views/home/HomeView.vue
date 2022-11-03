@@ -9,7 +9,9 @@ import ContactSection from "./components/ContactSection.vue";
 
 <template>
   <BannerSection />
-  <BlockSection title="IDENTIDAD"><IdentitySection /></BlockSection>
+  <BlockSection title="IDENTIDAD">
+    <IdentitySection />
+  </BlockSection>
   <BlockSection title="GALERÍA ÚLTIMOS EVENTOS">Content</BlockSection>
   <BlockSection title="SERVICIOS">
     <ServicesSection />

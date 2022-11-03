@@ -5,8 +5,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#e01f4f",
-        secondary: "#8f8b18",
+        primary: "#c21919",
+        secondary: "#2e67a8",
       },
       fontFamily: {
         faster: ["FasterOne"],

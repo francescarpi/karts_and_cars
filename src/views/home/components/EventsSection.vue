@@ -13,7 +13,7 @@ onMounted(async () => {
 </script>
 
 <template>
-  <ul>
+  <ul data-aos="fade-right">
     <li v-for="event in events" :key="event.id" class="mb-4">
       <b>{{ event.title }}</b
       >. {{ event.description }}. Del {{ event.start_date }} al

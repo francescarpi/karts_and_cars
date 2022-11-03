@@ -16,11 +16,14 @@ onMounted(async () => {
 
 <template>
   <LoadingContent :is-loading="services === null">
-    <div class="flex flex-wrap gap-4">
+    <div class="flex flex-wrap">
       <TextBox
+        class="border-b border-b-gray-400 bg-gray-200"
         :content="service.description"
         :key="service.id"
         v-for="service in services"
+        data-aos="fade-left"
+        data-aos-offset="100"
       />
     </div>
   </LoadingContent>
