@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "url": "/media/foto1.jpeg"
+  },
+  {
+    "id": 2,
+    "url": "/media/foto2.jpeg"
+  },
+  {
+    "id": 3,
+    "url": "/media/foto3.jpeg"
+  },
+  {
+    "id": 4,
+    "url": "/media/foto4.jpeg"
+  },
+  {
+    "id": 5,
+    "url": "/media/foto5.jpeg"
+  }
+]

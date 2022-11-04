@@ -5,6 +5,7 @@ import IdentitySection from "./components/IdentitySection.vue";
 import ServicesSection from "./components/ServicesSection.vue";
 import EventsSection from "./components/EventsSection.vue";
 import ContactSection from "./components/ContactSection.vue";
+import GallerySection from "./components/GallerySection.vue";
 </script>
 
 <template>
@@ -12,7 +13,9 @@ import ContactSection from "./components/ContactSection.vue";
   <BlockSection title="IDENTIDAD">
     <IdentitySection />
   </BlockSection>
-  <BlockSection title="GALERÍA ÚLTIMOS EVENTOS">Content</BlockSection>
+  <BlockSection title="GALERÍA EVENTOS">
+    <GallerySection />
+  </BlockSection>
   <BlockSection title="SERVICIOS">
     <ServicesSection />
   </BlockSection>
