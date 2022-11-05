@@ -11,15 +11,30 @@ export interface IEvent {
   description: string;
 }
 
+export interface IIdentity {
+  id: number;
+  text: string;
+}
+
+export interface IPhotoGallery {
+  id: string;
+  src: string;
+}
+
 const getFullUrl = (uri: string): string =>
   `${import.meta.env.VITE_API_HOST}${uri}`;
 
+const json = (response: Response) => response.json();
+const defaultList = () => [];
+
 export const getServices = (): Promise<IService[]> =>
-  fetch(getFullUrl("/services.json"))
-    .then((response) => response.json())
-    .catch(() => []);
+  fetch(getFullUrl("/services.json")).then(json).catch(defaultList);
 
 export const getEvents = (): Promise<IEvent[]> =>
-  fetch(getFullUrl("/events.json"))
-    .then((response) => response.json())
-    .catch(() => []);
+  fetch(getFullUrl("/events.json")).then(json).catch(defaultList);
+
+export const getIdentity = (): Promise<IIdentity[]> =>
+  fetch(getFullUrl("/identity.json")).then(json).catch(defaultList);
+
+export const getGallery = (): Promise<IPhotoGallery[]> =>
+  fetch(getFullUrl("/gallery.json")).then(json).catch(defaultList);

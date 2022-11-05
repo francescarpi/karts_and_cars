@@ -5,16 +5,21 @@ import IdentitySection from "./components/IdentitySection.vue";
 import ServicesSection from "./components/ServicesSection.vue";
 import EventsSection from "./components/EventsSection.vue";
 import ContactSection from "./components/ContactSection.vue";
+import GallerySection from "./components/GallerySection.vue";
 </script>
 
 <template>
   <BannerSection />
-  <BlockSection title="IDENTIDAD"><IdentitySection /></BlockSection>
-  <BlockSection title="GALERÍA ÚLTIMOS EVENTOS">Content</BlockSection>
+  <BlockSection title="IDENTIDAD">
+    <IdentitySection />
+  </BlockSection>
+  <BlockSection title="GALERÍA EVENTOS">
+    <GallerySection />
+  </BlockSection>
   <BlockSection title="SERVICIOS">
     <ServicesSection />
   </BlockSection>
-  <BlockSection title="¿DONDE ESTAREMOS?">
+  <BlockSection title="¿DÓNDE ESTAREMOS?">
     <EventsSection />
   </BlockSection>
   <BlockSection title="CONTACTO">
