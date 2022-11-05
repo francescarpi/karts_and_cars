@@ -19,7 +19,7 @@ import GallerySection from "./components/GallerySection.vue";
   <BlockSection title="SERVICIOS">
     <ServicesSection />
   </BlockSection>
-  <BlockSection title="¿DONDE ESTAREMOS?">
+  <BlockSection title="¿DÓNDE ESTAREMOS?">
     <EventsSection />
   </BlockSection>
   <BlockSection title="CONTACTO">

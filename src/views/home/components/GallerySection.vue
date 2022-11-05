@@ -2,28 +2,42 @@
 import { onMounted, ref } from "vue";
 import { getGallery } from "@/services/resources";
 import LoadingContent from "@/components/LoadingContent.vue";
-import { ArrowUpCircleIcon } from "@heroicons/vue/24/solid";
 import type { Ref } from "vue";
 import type { IPhotoGallery } from "@/services/resources";
+import {
+  ArrowLeftCircleIcon,
+  ArrowRightCircleIcon,
+} from "@heroicons/vue/24/outline/";
 
-const photos: Ref<IPhotoGallery[] | null> = ref(null);
-const visible = ref(0);
+const gallery: Ref<IPhotoGallery[]> = ref([]);
+const index = ref(0);
 
 onMounted(async () => {
-  photos.value = await getGallery();
+  gallery.value = await getGallery();
 });
+
+const showPrevious = () => {
+  index.value =
+    index.value === 0
+      ? (index.value = gallery.value.length - 1)
+      : index.value - 1;
+};
+const showNext = () => {
+  index.value = index.value === gallery.value.length - 1 ? 0 : index.value + 1;
+};
 </script>
 
 <template>
-  <LoadingContent :is-loading="photos === null">
+  <LoadingContent :is-loading="gallery.length === 0">
     <div class="flex relative">
-      <ArrowUpCircleIcon class="absolute z-10" />
-      <img
-        :src="photo.url"
-        :key="photo.id"
-        v-for="(photo, index) in photos"
-        v-show="index === visible"
-        class="w-full absolute"
+      <ArrowLeftCircleIcon
+        class="absolute text-white w-16 cursor-pointer left-0 top-1/2 -mt-6"
+        @click="showPrevious"
+      />
+      <img :src="gallery[index].src" class="w-full h-full block" />
+      <ArrowRightCircleIcon
+        class="absolute text-white w-16 cursor-pointer right-0 top-1/2 -mt-6"
+        @click="showNext"
       />
     </div>
   </LoadingContent>
