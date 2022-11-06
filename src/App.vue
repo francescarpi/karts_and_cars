@@ -6,7 +6,9 @@ import MainMenu from "./components/MainMenu.vue";
 import FooterSection from "./components/FooterSection.vue";
 
 onMounted(() => {
-  AOS.init();
+  AOS.init({
+    delay: 300,
+  });
 });
 </script>
 

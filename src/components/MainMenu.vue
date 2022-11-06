@@ -2,7 +2,9 @@
 
 <template>
   <div class="bg">
-    <div class="bg-black text-white p-4 opacity-80">Menu</div>
+    <div class="bg-black text-white p-4 opacity-80">
+      <div class="md:max-w-6xl md:mx-auto">Menu</div>
+    </div>
   </div>
 </template>
 

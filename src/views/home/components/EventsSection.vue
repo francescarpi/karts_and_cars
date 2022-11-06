@@ -10,6 +10,13 @@ const events: Ref<IEvent[] | null> = ref(null);
 onMounted(async () => {
   events.value = await getEvents();
 });
+
+const formatDate = (date: string): string => {
+  return new Intl.DateTimeFormat("es-ES", {
+    dateStyle: "full",
+    timeStyle: "short",
+  }).format(new Date(date));
+};
 </script>
 
 <template>
@@ -17,8 +24,11 @@ onMounted(async () => {
     <ul data-aos="fade-right">
       <li v-for="event in events" :key="event.id" class="mb-4">
         <b>{{ event.title }}</b
-        >. {{ event.description }}. Del {{ event.start_date }} al
-        {{ event.due_date }}
+        >. {{ event.description }}. <br />
+        <span class="text-xs">
+          Del {{ formatDate(event.start_date) }} al
+          {{ formatDate(event.due_date) }}
+        </span>
       </li>
     </ul>
   </LoadingContent>
