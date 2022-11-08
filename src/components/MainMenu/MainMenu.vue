@@ -1,38 +1,33 @@
 <script setup lang="ts">
 import MenuItems from "./MenuItems.vue";
-
-const typeHash = "hash";
-
-interface IMenuItem {
-  name: string;
-  type: string;
-  href: string;
-}
+import { typeHash } from "@/constants";
+import { Bars3Icon } from "@heroicons/vue/24/outline/";
+import type { IMenuItem } from "./types";
 
 const options: IMenuItem[] = [
   {
     name: "Identidad",
-    type: "hash",
+    type: typeHash,
     href: "identity",
   },
   {
     name: "Galería",
-    type: "hash",
+    type: typeHash,
     href: "gallery",
   },
   {
     name: "Servicios",
-    type: "hash",
+    type: typeHash,
     href: "services",
   },
   {
     name: "Eventos",
-    type: "hash",
+    type: typeHash,
     href: "events",
   },
   {
     name: "Contacto",
-    type: "hash",
+    type: typeHash,
     href: "contact",
   },
 ];
@@ -41,9 +36,10 @@ const options: IMenuItem[] = [
 <template>
   <div class="bg">
     <div class="bg-black text-white p-4 opacity-80">
-      <div class="md:max-w-6xl md:mx-auto">
-        <MenuItems />
+      <div class="hidden md:max-w-6xl md:mx-auto md:block">
+        <MenuItems :options="options" />
       </div>
+      <Bars3Icon class="block md:hidden w-6" />
     </div>
   </div>
 </template>

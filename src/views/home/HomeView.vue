@@ -10,19 +10,19 @@ import GallerySection from "./components/GallerySection.vue";
 
 <template>
   <BannerSection />
-  <BlockSection title="IDENTIDAD">
+  <BlockSection title="IDENTIDAD" id="identity">
     <IdentitySection />
   </BlockSection>
-  <BlockSection title="GALERÍA EVENTOS">
+  <BlockSection title="GALERÍA EVENTOS" id="gallery">
     <GallerySection />
   </BlockSection>
-  <BlockSection title="SERVICIOS">
+  <BlockSection title="SERVICIOS" id="services">
     <ServicesSection />
   </BlockSection>
-  <BlockSection title="¿DÓNDE ESTAREMOS?">
+  <BlockSection title="¿DÓNDE ESTAREMOS?" id="events">
     <EventsSection />
   </BlockSection>
-  <BlockSection title="CONTACTO">
+  <BlockSection title="CONTACTO" id="contact">
     <ContactSection />
   </BlockSection>
 </template>
