@@ -4,6 +4,7 @@ import { onMounted } from "vue";
 import AOS from "aos";
 import MainMenu from "./components/MainMenu/MainMenu.vue";
 import FooterSection from "./components/FooterSection.vue";
+import GoUp from "./components/GoUp.vue";
 
 onMounted(() => {
   AOS.init({
@@ -17,6 +18,7 @@ onMounted(() => {
     <MainMenu />
     <RouterView />
     <FooterSection />
+    <GoUp />
   </div>
 </template>
 
