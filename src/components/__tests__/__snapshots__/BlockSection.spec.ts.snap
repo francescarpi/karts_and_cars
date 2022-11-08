@@ -1,8 +1,8 @@
 // Vitest Snapshot v1
 
 exports[`BlockSection > renders properly 1`] = `
-"<section class=\\"p-4\\">
-  <h3 class=\\"font-default text-xl font-bold w-full border-b-2 pb-2 block\\">Foo</h3>
+"<section class=\\"p-6 md:max-w-6xl md:mx-auto\\">
+  <h3 class=\\"font-default text-xl font-bold w-full block text-primary drop-shadow-md\\">Foo</h3>
   <div class=\\"mt-4\\"></div>
 </section>"
 `;

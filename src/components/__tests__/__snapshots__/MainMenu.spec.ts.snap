@@ -1,7 +1,21 @@
 // Vitest Snapshot v1
 
 exports[`MainMenu > renders properly 1`] = `
-"<div class=\\"bg\\" data-v-43bf210c=\\"\\">
-  <div class=\\"bg-black text-white p-4 opacity-80\\" data-v-43bf210c=\\"\\">Menu</div>
-</div>"
+"<div class=\\"bg\\" data-v-965a6af2=\\"\\">
+  <div class=\\"bg-black text-white p-4 opacity-80\\" data-v-965a6af2=\\"\\">
+    <div class=\\"hidden md:max-w-6xl md:mx-auto md:block\\" data-v-965a6af2=\\"\\">
+      <ul class=\\"flex gap-6\\" data-v-965a6af2=\\"\\">
+        <li class=\\"cursor-pointer hover:text-secondary\\">Identidad</li>
+        <li class=\\"cursor-pointer hover:text-secondary\\">Galería</li>
+        <li class=\\"cursor-pointer hover:text-secondary\\">Servicios</li>
+        <li class=\\"cursor-pointer hover:text-secondary\\">Eventos</li>
+        <li class=\\"cursor-pointer hover:text-secondary\\">Contacto</li>
+      </ul>
+    </div><svg xmlns=\\"http://www.w3.org/2000/svg\\" fill=\\"none\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"1.5\\" stroke=\\"currentColor\\" aria-hidden=\\"true\\" class=\\"block md:hidden w-6\\" data-v-965a6af2=\\"\\">
+      <path stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" d=\\"M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5\\"></path>
+    </svg>
+  </div>
+</div>
+<!--v-if-->
+<!--v-if-->"
 `;

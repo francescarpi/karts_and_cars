@@ -1,10 +1,10 @@
-import BannerHome from "../BannerHome.vue";
+import BannerSection from "@/views/home/components/BannerSection.vue";
 import { mount } from "@vue/test-utils";
 import { describe, it, expect } from "vitest";
 
-describe("BannerHome", () => {
+describe("BannerSection", () => {
   it("renders properly", () => {
-    const wrapper = mount(BannerHome);
+    const wrapper = mount(BannerSection);
     expect(wrapper.html()).toMatchSnapshot();
   });
 });

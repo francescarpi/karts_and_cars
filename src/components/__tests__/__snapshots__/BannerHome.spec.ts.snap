@@ -1,11 +1,11 @@
 // Vitest Snapshot v1
 
-exports[`BannerHome > renders properly 1`] = `
-"<div class=\\"h-72 relative\\" data-v-63c1de5c=\\"\\">
-  <div class=\\"bg absolute inset-0\\" data-v-63c1de5c=\\"\\"></div>
-  <div class=\\"absolute inset-0 text-center\\" data-v-63c1de5c=\\"\\">
-    <h1 class=\\"text-white text-5xl mt-16 mb-4\\" data-v-63c1de5c=\\"\\"><span class=\\"text-red-800 font-faster\\">Karts</span><span class=\\"ml-2 mr-4 text-xl\\">&amp;</span><span class=\\"text-yellow-200 font-faster\\">Cars</span></h1>
-    <h2 class=\\"font-default font-bold text-white text-xl\\" data-v-63c1de5c=\\"\\"> Apasionados del motor </h2>
+exports[`BannerSection > renders properly 1`] = `
+"<div class=\\"h-72 relative md:h-96\\" data-v-c570277c=\\"\\">
+  <div class=\\"bg absolute inset-0\\" data-v-c570277c=\\"\\"></div>
+  <div class=\\"absolute inset-0 text-center md:max-w-6xl md:mx-auto\\" data-v-c570277c=\\"\\">
+    <h1 class=\\"text-5xl mt-12 mb-4\\" data-v-c570277c=\\"\\"><span class=\\"text-primary font-faster\\">Karts</span><span class=\\"ml-2 mr-4 text-xl text-black\\">&amp;</span><span class=\\"text-secondary font-faster\\">Cars</span></h1>
+    <h2 class=\\"font-default text-black text-2xl bg-white opacity-75 m-10 p-4 rounded-xl drop-shadow\\" data-v-c570277c=\\"\\"> Apasionados del motor,<br data-v-c570277c=\\"\\">a tu servicio! </h2>
   </div>
 </div>"
 `;
