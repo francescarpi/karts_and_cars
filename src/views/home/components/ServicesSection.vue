@@ -22,7 +22,7 @@ onMounted(async () => {
         :content="service.description"
         :key="service.id"
         v-for="service in services"
-        data-aos="fade-left"
+        data-aos="fade-up"
         data-aos-offset="100"
       />
     </div>
