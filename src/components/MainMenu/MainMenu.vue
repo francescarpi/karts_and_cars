@@ -62,7 +62,12 @@ const gotoSection = (item: IMenuItem): void => {
     </div>
   </div>
   <div
-    class="block md:hidden fixed right-0 top-0 bottom-0 bg-white p-4 z-10 shadow-md w-1/2"
+    class="block md:hidden bg-black fixed inset-0 z-10 opacity-50"
+    v-if="mobileOpened"
+    @click="handlerToggle"
+  ></div>
+  <div
+    class="block md:hidden fixed right-0 top-0 bottom-0 bg-white p-4 z-20 shadow-md w-2/3"
     v-if="mobileOpened"
   >
     <MenuItems :options="options" :vertical="true" @click="gotoSection" />
