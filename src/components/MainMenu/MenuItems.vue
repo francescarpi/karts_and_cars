@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { typeHash } from "@/constants";
 import type { PropType } from "vue";
 import type { IMenuItem } from "./types";
 
@@ -8,28 +7,22 @@ defineProps({
     required: true,
     type: Object as PropType<IMenuItem[]>,
   },
+  vertical: {
+    required: false,
+    default: false,
+  },
 });
 
-const gotoSection = (item: IMenuItem): void => {
-  switch (item.type) {
-    case typeHash:
-      (document.getElementById(item.href) as HTMLElement).scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-        inline: "nearest",
-      });
-      return;
-  }
-};
+defineEmits(["click"]);
 </script>
 
 <template>
-  <ul class="flex gap-6">
+  <ul class="flex gap-6" :class="{ 'flex-col': vertical }">
     <li
       v-for="option in options"
       class="cursor-pointer hover:text-secondary"
       :key="option.href"
-      @click="gotoSection(option)"
+      @click="$emit('click', option)"
     >
       {{ option.name }}
     </li>
