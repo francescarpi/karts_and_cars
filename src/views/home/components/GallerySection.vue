@@ -25,6 +25,8 @@ const showPrevious = () => {
 const showNext = () => {
   index.value = index.value === gallery.value.length - 1 ? 0 : index.value + 1;
 };
+const getMediaUrl = (uri: string): string =>
+  `${import.meta.env.VITE_MEDIA_HOST}${uri}`;
 </script>
 
 <template>
@@ -34,7 +36,7 @@ const showNext = () => {
         class="absolute text-white w-16 cursor-pointer left-0 top-1/2 -mt-6"
         @click="showPrevious"
       />
-      <img :src="gallery[index].src" class="w-full h-full block" />
+      <img :src="getMediaUrl(gallery[index].src)" class="w-full h-full block" />
       <ArrowRightCircleIcon
         class="absolute text-white w-16 cursor-pointer right-0 top-1/2 -mt-6"
         @click="showNext"
