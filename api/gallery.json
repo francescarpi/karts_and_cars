@@ -1,18 +1,18 @@
 [
   {
     "id": 2,
-    "src": "/media/foto2.jpeg"
+    "src": "/foto2.jpeg"
   },
   {
     "id": 3,
-    "src": "/media/foto3.jpeg"
+    "src": "/foto3.jpeg"
   },
   {
     "id": 4,
-    "src": "/media/foto4.jpeg"
+    "src": "/foto4.jpeg"
   },
   {
     "id": 5,
-    "src": "/media/foto5.jpeg"
+    "src": "/foto5.jpeg"
   }
 ]
