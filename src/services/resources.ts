@@ -19,6 +19,9 @@ export interface IIdentity {
 export interface IPhotoGallery {
   id: string;
   src: string;
+  thumbnail: string;
+  w: number;
+  h: number;
 }
 
 const getFullUrl = (uri: string): string =>
