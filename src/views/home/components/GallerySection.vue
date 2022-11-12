@@ -2,11 +2,12 @@
 import { onMounted, ref } from "vue";
 import { getGallery } from "@/services/resources";
 import LoadingContent from "@/components/LoadingContent.vue";
+
 import type { Ref } from "vue";
 import type { IPhotoGallery } from "@/services/resources";
 
 const gallery: Ref<IPhotoGallery[]> = ref([]);
-const index = ref(0);
+const options = {};
 
 const getMediaUrl = (uri: string): string =>
   `${import.meta.env.VITE_MEDIA_HOST}${uri}`;
@@ -26,6 +27,15 @@ onMounted(async () => {
 
 <template>
   <LoadingContent :is-loading="gallery.length === 0">
-    <vue-picture-swipe :items="gallery"></vue-picture-swipe>
+    <vue-picture-swipe :items="gallery" :options="options"></vue-picture-swipe>
   </LoadingContent>
 </template>
+
+<style scoped lang="scss">
+::v-deep .gallery-thumbnail {
+  display: none;
+  &:first-child {
+    display: inline;
+  }
+}
+</style>
