@@ -1,18 +1,30 @@
 [
   {
     "id": 2,
-    "src": "/foto2.jpeg"
+    "src": "/foto2.jpeg",
+    "thumbnail": "/foto2.jpeg",
+    "w": 1600,
+    "h": 1200
   },
   {
     "id": 3,
-    "src": "/foto3.jpeg"
+    "src": "/foto3.jpeg",
+    "thumbnail": "/foto3.jpeg",
+    "w": 1600,
+    "h": 1200
   },
   {
     "id": 4,
-    "src": "/foto4.jpeg"
+    "src": "/foto4.jpeg",
+    "thumbnail": "/foto4.jpeg",
+    "w": 1600,
+    "h": 1200
   },
   {
     "id": 5,
-    "src": "/foto5.jpeg"
+    "src": "/foto5.jpeg",
+    "thumbnail": "/foto5.jpeg",
+    "w": 1600,
+    "h": 1200
   }
 ]
