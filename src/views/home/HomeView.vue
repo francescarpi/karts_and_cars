@@ -13,7 +13,7 @@ import GallerySection from "./components/GallerySection.vue";
   <BlockSection title="IDENTIDAD" id="identity">
     <IdentitySection />
   </BlockSection>
-  <BlockSection title="GALERÍA EVENTOS" id="gallery">
+  <BlockSection title="GALERÍA" id="gallery">
     <GallerySection />
   </BlockSection>
   <BlockSection title="SERVICIOS" id="services">
