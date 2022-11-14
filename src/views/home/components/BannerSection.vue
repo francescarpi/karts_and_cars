@@ -18,7 +18,7 @@ import LogoKartsAndCars from "../../../components/LogoKartsAndCars.vue";
 
 <style scoped lang="scss">
 .bg {
-  @apply bg-no-repeat bg-cover h-full w-full opacity-70 bg-bottom;
+  @apply bg-no-repeat bg-cover h-full w-full opacity-90 bg-bottom;
   background-image: url("@/assets/imgs/cars1.jpeg");
 }
 </style>

@@ -1,7 +1,5 @@
 <template>
-  <h1 class="text-5xl">
-    <span class="text-primary font-faster">Karts</span>
-    <span class="ml-2 mr-4 text-xl text-black">&</span>
-    <span class="text-secondary font-faster">Cars</span>
-  </h1>
+  <div class="drop-shadow-md">
+    <img src="../assets/imgs/logo.svg" class="w-64 md:w-96 mx-auto" />
+  </div>
 </template>
